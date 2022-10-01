@@ -3,17 +3,14 @@ import Detail from "./routes/Detail";
 import Home from "./routes/Home";
 
 function App() {
+  
   return (
     <Routes>
-      <Route path="/abot-us">
+        {/* <Route path="/react-practice/about-us">
           <h1>Hello</h1>
-        </Route>
-        <Route path="/movie/:id">
-          <Detail />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        </Route> */}
+        <Route path="/react-practice/movie/:id" element={<Detail/>} />
+        <Route path="/react-practice" element={<Home />} />
     </Routes>
   );
 }
