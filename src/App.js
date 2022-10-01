@@ -9,8 +9,10 @@ function App() {
         {/* <Route path="/react-practice/about-us">
           <h1>Hello</h1>
         </Route> */}
-        <Route path="/react-practice/movie/:id" element={<Detail/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<Detail/>} />
         <Route path="/react-practice" element={<Home />} />
+        <Route path="/react-practice/movie/:id" element={<Detail/>} />
     </Routes>
   );
 }
